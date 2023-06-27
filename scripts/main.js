@@ -1,6 +1,6 @@
 /**
-
-Dark / Light Theme Logic */
+ * Dark / Light Theme Logic
+ */
 
 const switcher = document.getElementById("switch-theme");
 

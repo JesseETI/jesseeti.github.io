@@ -215,7 +215,7 @@ main {
 
 #socials-container a {
   font-size: 1.25rem;
-  font: var(--title-color);
+  color: var(--title-color);
   transition: 0.3s;
 }
 
