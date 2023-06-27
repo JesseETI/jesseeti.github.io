@@ -109,6 +109,34 @@ img {
   background-color: var(--base-color-alt);
 }
 
+/* DARK MODE */
+body.dark-theme {
+  --body-color: hsl(var(--hue), var(--sat), 5%);
+  --container-color: hsl(var(--hue), var(--sat), 10%);
+  --base-color-alt: hsl(var(--hue), var(--sat), 93%); /* +4% */
+  --text-color-bg: hsl(var(--hue), 8%, 15%);
+
+  --title-color: hsl(var(--hue), 8%, 95%);
+  --text-color: hsl(var(--hue), 8%, 75%);
+  --text-color-light: hsl(var(--hue), 8%, 45%);
+}
+
+.dark-theme #filter-tabs {
+  background-color: var(--container-color);
+}
+
+.dark-theme::-webkit-scrollbar {
+  background-color: hsl(var(--hue), 8%, 16%);
+}
+
+.dark-theme::-webkit-scrollbar-thumb {
+  background-color: hsl(var(--hue), 8%, 24%);
+}
+
+.dark-theme::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(var(--hue), 8%, 32%);
+}
+
 /* MAIN CSS */
 header,
 main {
