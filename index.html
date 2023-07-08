@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
     <!--=============== REMIX ICONS ===============-->
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
@@ -15,7 +15,13 @@
   </head>
   <body>
     <header class="container">
-      <i class="ri-moon-line" id="switch-theme"></i>
+      <i
+        class="ri-moon-line"
+        id="switch-theme"
+        role="button"
+        tabindex="0"
+        aria-label="Switch theme"
+      ></i>
 
       <section class="grid" id="profile-container">
         <section id="profile-data">
@@ -37,6 +43,7 @@
                 href="https://www.linkedin.com/in/jesse-emamalie/"
                 target="_blank"
                 class="social-icon-single"
+                aria-label="LinkedIn profile"
               >
                 <i class="ri-linkedin-box-fill"></i>
               </a>
@@ -46,6 +53,7 @@
                 href="https://github.com/JesseETI"
                 target="_blank"
                 class="social-icon-single"
+                aria-label="GitHub profile"
               >
                 <i class="ri-github-fill"></i>
               </a>
@@ -53,19 +61,14 @@
           </ul>
         </section>
 
-        <section id="profile-buttons">
-          <a download="" href="assets/Jesse-Emamalie-CV.pdf" class="button"
-            >Download CV <i class="ri-download-line"></i
-          ></a>
-        </section>
-
-        <section class="grid" id="tech-stack-container">
-          <h3>Tech Stack</h3>
+        <section id="tech-stack-container">
+          <h2>Tech Stack</h2>
           <div class="grid" id="stack-icons">
             <img
               src="assets/tech-stack/html5.svg"
               title="HTML5"
               alt="HTML5 skill icon"
+              
             />
             <img
               src="assets/tech-stack/css3.svg"
@@ -91,7 +94,7 @@
         </section>
 
         <section id="profile-about-container">
-          <h3>About Me</h3>
+          <h2>About Me</h2>
           <p>
             I'm Jesse, a frontend web developer passionate about JavaScript and
             its ecosystem. I have experience in TypeScript, JavaScript, HTML,
@@ -111,15 +114,199 @@
     <main class="container">
       <section id="filters">
         <!--=============== FILTERS TABS ===============-->
-        <div id="filter-tabs">
+        <div id="filter-tabs" role="tablist">
           <button
-            class="filter-tab-btn filter-tab-active"
+            class="filter-tab-btn filter-tab-btn-active"
             data-target="#projects"
+            role="tab"
+            aria-selected="true"
+            aria-controls="projects"
           >
             Projects
           </button>
-          <button class="filter-tab-btn" data-target="#skills">Skills</button>
+          <button
+            class="filter-tab-btn"
+            data-target="#education"
+            role="tab"
+            aria-controls="education"
+          >
+            Education
+          </button>
+          <button
+            class="filter-tab-btn"
+            data-target="#experience"
+            role="tab"
+            aria-controls="experience"
+          >
+            Experience
+          </button>
         </div>
+
+        <section id="filter-container">
+          <!--=============== PROJECT SECTION ===============-->
+          <section
+            class="grid filter-content-active"
+            id="projects"
+            data-content
+            role="tabpanel"
+            aria-labelledby="projects"
+          >
+            <article class="project-card">
+              <img
+                src="assets/projects/project1.jpg"
+                alt=""
+                class="project-img"
+              />
+              <div class="project-modal">
+                <section class="project-data">
+                  <div class="project-data-text">
+                    <p class="project-type">Web Development Projects</p>
+                    <h3 class="project-title">Coming Soon</h3>
+                  </div>
+                  <a href="#" class="button button-small">
+                    <i class="ri-link"></i>
+                  </a>
+                </section>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img
+                src="assets/projects/project2.jpg"
+                alt=""
+                class="project-img"
+              />
+              <div class="project-modal">
+                <section class="project-data">
+                  <div class="project-data-text">
+                    <p class="project-type">Web Development Projects</p>
+                    <h3 class="project-title">Coming Soon</h3>
+                  </div>
+                  <a href="#" class="button button-small">
+                    <i class="ri-link"></i>
+                  </a>
+                </section>
+              </div>
+            </article>
+          </section>
+
+          <!--=============== EDUCATION SECTION ===============-->
+          <section
+            id="education"
+            data-content
+            role="tabpanel"
+            aria-labelledby="education"
+          >
+            <div class="qualification-data">
+              <div>
+                <h3 class="qualification-title">
+                  CSEC & CAPE (equiv. O-levels & A-levels)
+                </h3>
+                <span class="qualification-place"
+                  >St. Mary's College (CIC)</span
+                >
+                <div class="qualification-date">
+                  <i class="ri-calendar-fill"></i>
+                  2012 - 2018
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification-rounder"></span>
+                <span class="qualification-line"></span>
+              </div>
+            </div>
+
+            <div class="qualification-data">
+              <div></div>
+              <div>
+                <span class="qualification-rounder"></span>
+                <span class="qualification-line"></span>
+              </div>
+              <div>
+                <h3 class="qualification-title">
+                  BSc. Computer Science (Honors)
+                </h3>
+                <span class="qualification-place"
+                  >University of the West Indies, St. Augustine</span
+                >
+                <div class="qualification-date">
+                  <i class="ri-calendar-fill"></i>
+                  2018 - 2021
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!--=============== EXPERIENCE SECTION ===============-->
+          <section
+            id="experience"
+            data-content
+            role="tabpanel"
+            aria-labelledby="experience"
+          >
+            <div class="qualification-data">
+              <div>
+                <h3 class="qualification-title">Freelance Web Developer</h3>
+                <span class="qualification-place">ETI Designs</span>
+                <div class="qualification-date">
+                  <i class="ri-calendar-fill"></i>
+                  2021 - Present
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification-rounder"></span>
+                <span class="qualification-line"></span>
+              </div>
+            </div>
+
+            <div class="qualification-data">
+              <div></div>
+              <div>
+                <span class="qualification-rounder"></span>
+                <span class="qualification-line"></span>
+              </div>
+              <div>
+                <h3 class="qualification-title">Front-end Developer</h3>
+                <span class="qualification-place"
+                  >CIBC FirstCaribbean International Bank</span
+                >
+                <div class="qualification-date">
+                  <i class="ri-calendar-fill"></i>
+                  2022 - Present
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+      </section>
+
+      <section class="grid" id="contact">
+        <div id="contact-title-container">
+          <h2 id="contact-title">Where I'm From</h2>
+          <h3 id="contact-call">Get in touch</h3>
+        </div>
+
+        <section class="grid" id="contact-container">
+          <!-- Location -->
+          <div class="contact-data">
+            <i class="ri-map-pin-2-line"></i>
+            <div class="contact-data-text">
+              <h3>Location</h3>
+              <p>Trinidad and Tobago</p>
+            </div>
+          </div>
+
+          <!-- Location -->
+          <div class="contact-data">
+            <i class="ri-global-line"></i>
+            <div class="contact-data-text">
+              <h3>Working</h3>
+              <p>Remotely</p>
+            </div>
+          </div>
+        </section>
       </section>
     </main>
     <footer class="container">
@@ -129,6 +316,7 @@
       </p>
     </footer>
     <!-- Dependencies -->
-    <script src="scripts/main.js"></script>
+    <script src="scripts/toggle-theme.js"></script>
+    <script src="scripts/filter-content.js"></script>
   </body>
 </html>
