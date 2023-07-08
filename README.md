@@ -12,7 +12,8 @@ Welcome to the repository of my minimalistic portfolio website! This website is 
 
 ## Google PageSpeed Insights
 <img width="959" alt="image" src="https://github.com/JesseETI/jesseeti.github.io/assets/13999827/b0e07373-2041-49cf-94f8-464bed9c9416">
-[Report](https://pagespeed.web.dev/analysis/https-jesseeti-github-io/qd0cjueouo?form_factor=mobile)
+
+[Full Report](https://pagespeed.web.dev/analysis/https-jesseeti-github-io/qd0cjueouo?form_factor=mobile)
 
 ## Technologies Used
 
@@ -21,6 +22,8 @@ This website is built using the following technologies:
 - HTML
 - CSS
 - JavaScript
+
+* Also used Remix Icon for nice icon packs
   
 ## Contributing
 
