@@ -1,1 +1,28 @@
+# Minimalistic Portfolio Website
+
+Welcome to the repository of my minimalistic portfolio website! This website is really just a nice-looking resume, developed with minimalism, speed, user-friendliness and a trickle of CSS practice in mind.
+
+## What I focused on
+- Mobile-First Responsive Design
+- WAI-ARIA accessibility standards
+- Experimenting with CSS variables
+- Dark / Light Theme
+- Website Speed
+- Minimalistic Design
+
+## Technologies Used
+
+This website is built using the following technologies:
+
+- HTML
+- CSS
+- JavaScript
+  
+## Contributing
+
+While this is a personal project and not actively seeking contributions, if you find a bug or think of a new feature, feel free to open an issue or pull a request.
+
+## License
+
+This project is licensed under the MIT License.
 
